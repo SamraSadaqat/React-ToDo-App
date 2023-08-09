@@ -1,0 +1,101 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://www.incimages.com/uploaded_files/image/1920x1080/getty_638884198_366705.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(54, 2, 2, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px ;
+}
+
+h1 {
+  font-size: 28px;
+  color: #c7b1b1;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #c7b1b1;
+  outline: none;
+  font-size: 16px;
+  background-color: #c7b1b1;
+  transition: border-bottom-color 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus {
+  border-bottom-color: green;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+span {
+  font-size: 18px;
+  color: #c7b1b1;
+}
+
+button {
+  background-color: #aaa;
+  border: none;
+  color: green;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: #aaa;
+}
+
+button.delete {
+  color: green;
+}
+
+button.delete:hover {
+  color: #aaa;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+}
