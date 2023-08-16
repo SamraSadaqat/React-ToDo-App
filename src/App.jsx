@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Todolist from './Components/todoList';
+import Todolist from './Components/todolist';
 
 function TodoApp() {
   const [todos, setTodos] = useState([]);
